@@ -1,8 +1,6 @@
-  /*about*/
   .about {
     margin-top: 0;
     padding: 80px 0 100px 0;
-    /* background-image: url('./assets/img/cover.jpg'); */
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,7 +34,6 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 96%;
-    /* text-align: justify; */
   }
 
   .about a {

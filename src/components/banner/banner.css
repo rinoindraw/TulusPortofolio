@@ -15,7 +15,6 @@
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     padding: 130px 0 100px 0;
   }
 
@@ -101,7 +100,6 @@
 
 
   .Name {
-    /* writing-mode: horizontal-tb !important; */
     padding: 12px;
     font-weight: bold;
     display: flex;

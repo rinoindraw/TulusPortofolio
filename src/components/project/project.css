@@ -1,11 +1,9 @@
-/* Overlay Image */
 .overlay-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.7); */
   background-color: white;
   display: flex;
   align-items: center;
@@ -36,32 +34,10 @@
 .overlay-image {
   max-width: 540px;
 }
-/*   
-  .overlay-image {
-    max-width: 475px;
-    margin-top: 80px;
-  }
-  
-  .overlay-image  {
-    max-width: 30%;
-    max-height: 100%;
-  }
-  
-  .overlay-image-ux {
-    max-height: 560px;
-    margin-top: 80px;
-  }
-  
-  .overlay-image-ux img {
-    max-width: 100%;
-    max-height: 100%;
-  } */
 
-/* Projects */
 .project {
   padding: 80px 0;
   position: relative;
-  /* background-image: url('./assets/img/cover.jpg'); */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,10 +82,6 @@
   background-color: rgba(23, 107, 135, 0.2);
   overflow: hidden;
 }
-
-/* .project .nav.nav-pills .nav-item {
-    width: 20%;
-  } */
 
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -159,7 +131,6 @@
   border-radius: 0 55px 55px 0;
 }
 
-/* Project Images */
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
@@ -170,18 +141,6 @@
 .proj-imgbx img {
   height: 280px;
 }
-
-/* .firsttab .proj-imgbx img {
-    height: 100%;
-  }
-  
-  .secondtab .proj-imgbx img {
-    height: 100%;
-  }
-  
-  .thirdtab .proj-imgbx img {
-    width: 100%;
-  } */
 
 .proj-imgbx::before {
   content: "";
@@ -247,9 +206,6 @@
   border-radius: 20px;
   background-color: white;
   padding-bottom: 15px;
-  /* -webkit-box-shadow:1px 10px 15px #354259;
-    -moz-box-shadow:1px 10px 15px #354259;
-    box-shadow:1px 10px 15px #354259; */
 }
 
 .background-image-right {
