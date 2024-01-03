@@ -80,7 +80,6 @@
     color: #fff;
   }
   .Resume::before {
-    transition: 0.5 all ease;
     position: absolute;
     top: 0;
     left: 50%;
