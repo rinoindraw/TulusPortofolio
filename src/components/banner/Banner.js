@@ -61,7 +61,7 @@ export const Banner = () => {
         Undergraduate student, a long-life learner with a passion for mathematics, data science, machine learning, finance, technology, etc., has a strong character that is unyielding, diligent, and responsible.
         </p>
         <Link to="Contact"  smooth={true} duration={900}>
-          <button onClick={onResumeClick}>Contact Me</button>
+          <button onClick={onResumeClick}>Resume</button>
         </Link>
         <img src={Arrow} alt="Arrow" />
       </div>
