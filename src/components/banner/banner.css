@@ -15,6 +15,7 @@
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     padding: 130px 0 100px 0;
   }
 
@@ -80,6 +81,7 @@
     color: #fff;
   }
   .Resume::before {
+    transition: 0.5 all ease;
     position: absolute;
     top: 0;
     left: 50%;
@@ -99,6 +101,7 @@
 
 
   .Name {
+    /* writing-mode: horizontal-tb !important; */
     padding: 12px;
     font-weight: bold;
     display: flex;
