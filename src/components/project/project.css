@@ -1,0 +1,262 @@
+/* Overlay Image */
+.overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  display: flex;
+  text-align: center;
+  width: 80%;
+}
+
+.project-container-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-container-overlay p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  margin: 10px;
+}
+
+.overlay-image {
+  max-width: 540px;
+}
+/*   
+  .overlay-image {
+    max-width: 475px;
+    margin-top: 80px;
+  }
+  
+  .overlay-image  {
+    max-width: 30%;
+    max-height: 100%;
+  }
+  
+  .overlay-image-ux {
+    max-height: 560px;
+    margin-top: 80px;
+  }
+  
+  .overlay-image-ux img {
+    max-width: 100%;
+    max-height: 100%;
+  } */
+
+/* Projects */
+.project {
+  padding: 80px 0;
+  position: relative;
+  /* background-image: url('./assets/img/cover.jpg'); */
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.linkproject {
+  text-align: center;
+}
+
+.project a svg {
+  margin: 30px 25px;
+  font-size: 40px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.project a:hover {
+  color: #000;
+}
+
+.project a:hover svg {
+  margin-left: 25px;
+}
+
+.left-anim:hover svg {
+  margin-right: 50px;
+}
+
+.project .nav.nav-pills {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgba(23, 107, 135, 0.2);
+  overflow: hidden;
+}
+
+/* .project .nav.nav-pills .nav-item {
+    width: 20%;
+  } */
+
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 15px 0;
+  color: #000;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+
+.project .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #1f4690 -5.91%, #1363df 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.project .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+  color: #000;
+}
+
+.project .nav.nav-pills .nav-link.active {
+  color: #fff;
+}
+
+.nav-link#projects-tabs-tab-first {
+  border-radius: 55px 0px 0px 55px;
+}
+
+.nav-link#projects-tabs-tab-second {
+  border-radius: 0;
+}
+
+.nav-link#projects-tabs-tab-third {
+  border-radius: 0 55px 55px 0;
+}
+
+/* Project Images */
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.proj-imgbx img {
+  height: 280px;
+}
+
+/* .firsttab .proj-imgbx img {
+    height: 100%;
+  }
+  
+  .secondtab .proj-imgbx img {
+    height: 100%;
+  }
+  
+  .thirdtab .proj-imgbx img {
+    width: 100%;
+  } */
+
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #fb8b24 -5.91%, #f6b17a 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.6s ease-in-out;
+}
+
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.7s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+
+.proj-txtx h4 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+  color: white;
+}
+
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+
+.text-card-wrapper {
+  text-align: center;
+}
+
+.text-card-wrapper h4 {
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 700;
+}
+
+.text-card-wrapper span {
+  font-weight: 700;
+}
+
+.project-container {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  padding-bottom: 15px;
+  /* -webkit-box-shadow:1px 10px 15px #354259;
+    -moz-box-shadow:1px 10px 15px #354259;
+    box-shadow:1px 10px 15px #354259; */
+}
+
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
