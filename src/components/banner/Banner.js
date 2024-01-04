@@ -7,6 +7,7 @@ import { animateScroll as scroll } from "react-scroll";
 import Pdf from "../../assets/img/logo.png";
 import Arrow from "../../assets/img/arrow.png";
 import './banner.css'
+import { EnvelopeFill } from "react-bootstrap-icons";
 
 export const Banner = () => {
   const typewriterRef = useRef(null);
@@ -40,14 +41,17 @@ export const Banner = () => {
   };
 
   return (
-    <div className="banner">
+    <div className="banner" id="home">
       <div className="flex-banner">
       
-      <a href="https://www.linkedin.com/in/akshay-vakil/" target="_blank" className="icons left-anim">
+      <a href="https://www.linkedin.com/in/akshay-vakil/" target="_blank" className="icons left-anim" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
-      <a href="https://github.com/Octrainn" target="_blank" className="icons">
+      <a href="https://github.com/Octrainn" target="_blank" className="icons center-anim" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} size="2x" />
+      </a>
+      <a href="https://github.com/Octrainn" target="_blank" className="icons" rel="noreferrer">
+        <EnvelopeFill />
       </a>
       
       </div>

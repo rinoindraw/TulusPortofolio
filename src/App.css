@@ -84,4 +84,25 @@ p.danger {
 color: red;
 }
 
+@media screen and (max-width: 1000px){
+  .Introduction h1 {
+    font-size: 2em;
+  }
+
+  .Introduction p {
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 1em 0;
+  }
+
+  nav{
+    background-color: #C69774;
+  }
+
+  nav.navbar.scrolled {
+    padding: 15px 0;
+    background-color: #C69774;
+    }
+}
+
   

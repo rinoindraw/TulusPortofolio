@@ -49,7 +49,7 @@
 .company-logo::before {
   border-radius: 30px;
   content: "";
-  background: linear-gradient(90.21deg, #47b5ff -5.91%, #1363df 111.58%);
+  background: linear-gradient(90.21deg, #fb8b24 -5.91%, #f6b17a 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;

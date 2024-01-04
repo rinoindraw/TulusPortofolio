@@ -53,13 +53,33 @@ export const NavBar = () => {
               Home
             </Nav.Link>
             <Nav.Link
+              href="#about"
+              className={
+                activeLink === "about" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("about")}
+            >
+              About
+            </Nav.Link>
+            <Nav.Link
               href="#skills"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              About
+              Skill
+            </Nav.Link>
+            <Nav.Link
+              href="#organization"
+              className={
+                activeLink === "organization"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("organization")}
+            >
+              Organization
             </Nav.Link>
             <Nav.Link
               href="#experience"
@@ -73,57 +93,33 @@ export const NavBar = () => {
               Experience
             </Nav.Link>
             <Nav.Link
-              href="#organization"
-              className={
-                activeLink === "organization"
-                  ? "active navbar-link"
-                  : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("organization")}
-            >
-              Project
-            </Nav.Link>
-            <Nav.Link
-              href="#achievements"
-              className={
-                activeLink === "achievements"
-                  ? "active navbar-link"
-                  : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("achievements")}
-            >
-              Organization
-            </Nav.Link>
-            <Nav.Link
               href="#projects"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              Skill
+              Project
             </Nav.Link>
             <Nav.Link
-              href="#certificate"
+              href="#achievement"
               className={
-                activeLink === "certificate"
+                activeLink === "achievement"
                   ? "active navbar-link"
                   : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("certificate")}
-            >
-              License
-            </Nav.Link>
-            <Nav.Link
-              href="#certificate"
-              className={
-                activeLink === "certificate"
-                  ? "active navbar-link"
-                  : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("certificate")}
+              onClick={() => onUpdateActiveLink("achievement")}
             >
               Achievement
+            </Nav.Link>
+            <Nav.Link
+              href="#license"
+              className={
+                activeLink === "license" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("license")}
+            >
+              License
             </Nav.Link>{" "}
           </Nav>
         </Navbar.Collapse>

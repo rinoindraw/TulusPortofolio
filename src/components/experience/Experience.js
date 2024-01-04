@@ -35,7 +35,7 @@ export const Experience = () => {
   ];
 
   return (
-<section className="my-experience" id="organization">
+<section className="my-experience" id="experience">
       <Container>
         <Row className="align-items-center justify-content-center dflex">
         <TrackVisibility>

@@ -33,7 +33,7 @@ export const License = () => {
   };
 
   return (
-    <section className="org-experience" id="certificate">
+    <section className="org-experience" id="license">
       <Container>
         <div className="experience-wrapper">
           <TrackVisibility>

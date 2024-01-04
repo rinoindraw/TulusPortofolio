@@ -7,6 +7,7 @@ import { Experience } from './components/experience/Experience';
 import { Project } from './components/project/Project';
 import { Achievement } from './components/achievement/Achievement';
 import { License } from './components/license/License'
+import { Footer } from './components/footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
@@ -22,6 +23,7 @@ function App() {
       <Project />
       <Achievement />
       <License />
+      <Footer />
     </div>
   );
 }
