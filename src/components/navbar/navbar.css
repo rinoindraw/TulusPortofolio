@@ -1,5 +1,5 @@
 nav.navbar {
-  padding: 0 0;
+  padding: 8px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -8,7 +8,7 @@ nav.navbar {
   }
 
   nav.navbar.scrolled {
-  padding: 0 0;
+  padding: 8px 0;
   background-color: #C69774;
   }
 
@@ -16,10 +16,10 @@ nav.navbar {
     color: #000 !important;
   }
 
-  /* nav.navbar a.navbar-brand img{
-  width: 40px;
-  height: 40px;
-  } */
+  nav.navbar a.navbar-brand img{
+  width: 32px;
+  height: 32px;
+  }
 
   nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -28,7 +28,7 @@ nav.navbar {
   padding: 5px 20px;
   font-size: 18px;
   opacity: 0.5;
-  margin-left: 15px;
+  margin-left: 10px;
   display: inline-block;
   position: relative;
   align-items: center;
@@ -110,6 +110,7 @@ nav.navbar {
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 20px;
   }
 
   .social-icon a::before {

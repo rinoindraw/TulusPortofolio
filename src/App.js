@@ -18,9 +18,9 @@ function App() {
       <Banner />
       <About />
       <Skill />
-      <OrganizationExp />
       <Experience />
       <Project />
+      <OrganizationExp />
       <Achievement />
       <License />
       <Footer />

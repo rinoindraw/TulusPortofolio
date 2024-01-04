@@ -16,7 +16,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    padding: 130px 0 80px 0;
+    padding: 130px 0 100px 0;
   }
 
   .flex-banner {
@@ -142,7 +142,7 @@
   .Introduction p {
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
+    width: 700px;
     justify-content: center;
     text-align: center;
     margin: 1em 0;
@@ -150,9 +150,11 @@
     padding-left: 70px;
     padding-right: 70px;
     font-size: 18px;
+    font-weight: bold;
   }
   .Introduction button {
-    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     outline: none;
     border: none;
     width: 150px;

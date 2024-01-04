@@ -1,7 +1,5 @@
 import React from "react";
-import gdsc from "../../assets/img/logo.png";
 import { Container, Row, Col } from "react-bootstrap";
-import logoHima from "../../assets/img/datascient.png";
 import logoUi from "../../assets/img/ui.png";
 import logoBangkit from "../../assets/img/bangkitLogo.png";
 import "./experience.css";

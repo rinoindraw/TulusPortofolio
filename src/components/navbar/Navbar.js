@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
-import homeLogo from "../../assets/img/logo.png";
+import homeLogo from "../../assets/img/t-icons.png";
 import "./navbar.css";
 
 export const NavBar = () => {
@@ -36,17 +36,7 @@ export const NavBar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <span className="navbar-text">
-            <div className="social-icon">
-              <a
-                href="https://www.instagram.com/tulussetiawann_/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src={navIcon3} alt="" />
-              </a>
-            </div>
-          </span>{" "}
+          <img src={homeLogo} alt="RinoIndra." />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -55,7 +45,7 @@ export const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="text-center mx-auto">
-          <Nav className="me-auto">
+          <Nav className="mx-auto">
             <Nav.Link
               href="#home"
               className={
@@ -84,17 +74,6 @@ export const NavBar = () => {
               Skill
             </Nav.Link>
             <Nav.Link
-              href="#organization"
-              className={
-                activeLink === "organization"
-                  ? "active navbar-link"
-                  : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("organization")}
-            >
-              Organization
-            </Nav.Link>
-            <Nav.Link
               href="#experience"
               className={
                 activeLink === "experience"
@@ -113,6 +92,17 @@ export const NavBar = () => {
               onClick={() => onUpdateActiveLink("projects")}
             >
               Project
+            </Nav.Link>
+            <Nav.Link
+              href="#organization"
+              className={
+                activeLink === "organization"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("organization")}
+            >
+              Organization
             </Nav.Link>
             <Nav.Link
               href="#achievement"
