@@ -35,6 +35,19 @@ export const NavBar = () => {
       }`}
     >
       <Container>
+        <Navbar.Brand href="#home">
+          <span className="navbar-text">
+            <div className="social-icon">
+              <a
+                href="https://www.instagram.com/tulussetiawann_/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={navIcon3} alt="" />
+              </a>
+            </div>
+          </span>{" "}
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className="order-lg-first"
@@ -42,7 +55,7 @@ export const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="text-center mx-auto">
-          <Nav className="mx-auto">
+          <Nav className="me-auto">
             <Nav.Link
               href="#home"
               className={

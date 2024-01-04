@@ -4,10 +4,10 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect/dist/core";
 import { animateScroll as scroll } from "react-scroll";
-import Pdf from "../../assets/img/logo.png";
 import Arrow from "../../assets/img/arrow.png";
 import './banner.css'
 import { EnvelopeFill } from "react-bootstrap-icons";
+import Cv from "../../assets/img/cv.pdf"
 
 export const Banner = () => {
   const typewriterRef = useRef(null);
@@ -37,20 +37,20 @@ export const Banner = () => {
  
 
   const onResumeClick = () => {
-    window.open(Pdf);
+    window.open(Cv);
   };
 
   return (
     <div className="banner" id="home">
       <div className="flex-banner">
       
-      <a href="https://www.linkedin.com/in/akshay-vakil/" target="_blank" className="icons left-anim" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/tulus-setiawan/" target="_blank" className="icons left-anim" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
-      <a href="https://github.com/Octrainn" target="_blank" className="icons center-anim" rel="noreferrer">
+      <a href="https://github.com/Jendma" target="_blank" className="icons center-anim" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
-      <a href="https://github.com/Octrainn" target="_blank" className="icons" rel="noreferrer">
+      <a href="mailto:indrraaaw@gmail.com" target="_blank" className="icons" rel="noreferrer">
         <EnvelopeFill />
       </a>
       

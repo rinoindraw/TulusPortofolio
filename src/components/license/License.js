@@ -49,7 +49,7 @@ export const License = () => {
 
                 <div className="license-icon">
                   <a
-                    href="https://www.linkedin.com/in/akshay-vakil/"
+                    href="https://www.linkedin.com/in/tulus-setiawan/"
                     target="_blank"
                     className="icons"
                     rel="noreferrer"

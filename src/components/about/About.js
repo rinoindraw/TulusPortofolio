@@ -79,7 +79,7 @@ export const About = () => {
                   </p>
                   <a
                     className="socialBox"
-                    href="https://www.linkedin.com/in/rino-indra-wicaksono-43582b235/"
+                    href="https://www.linkedin.com/in/tulus-setiawan/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

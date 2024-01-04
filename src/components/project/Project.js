@@ -238,7 +238,7 @@ export const Project = () => {
                   <h2>Projects</h2>
                   <div className="linkproject">
                     <a
-                      href="https://github.com/Octrainn"
+                      href="https://github.com/Jendma"
                       target="_blank"
                       className="icons"
                       rel="noreferrer"

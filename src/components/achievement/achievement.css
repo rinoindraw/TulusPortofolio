@@ -7,7 +7,7 @@
   
   .ach-experience p {
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
   }
@@ -86,6 +86,6 @@
   
   .company-details {
     width: 96%;
-    text-align: justify;
+    /* text-align: justify; */
     padding: 0 0
   }

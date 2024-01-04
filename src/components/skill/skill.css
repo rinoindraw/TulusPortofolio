@@ -43,12 +43,13 @@
 
    .skill-slider .item .skill-item{
     max-width: 100%;
-    padding: 0 15px;
+    padding: 25px 15px;
   }  
 
   .skill-slider .item .skill-inner img {
     margin-bottom: 35px;
-    width: 80%;
+    width: 60%;
+    height: 250px;
   }
 
   /* .skill-slider .item .skill-item .skill-inner{

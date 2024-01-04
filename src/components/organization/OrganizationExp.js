@@ -1,7 +1,6 @@
 import React from "react";
-import gdsc from "../../assets/img/logo.png";
+import logoUi from "../../assets/img/ui.png";
 import { Container, Row, Col } from "react-bootstrap";
-import logoHima from "../../assets/img/datascient.png";
 import "./organization.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -9,30 +8,24 @@ import TrackVisibility from "react-on-screen";
 export const OrganizationExp = () => {
   const experiences = [
     {
-      company: "Our Humble Beginings",
-      position: "2009 - 2011",
-      duration: "December 2022 - Present",
+      company: "Vice Head of Logistic Division",
+      position: "June 2022 - October 2022",
+      head: "Pengenalan Departemen Matematika (PDM) 2022",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-      logo: gdsc,
-      title: "HMSK Gunadarma",
+        "• Liaise with the event division for essential requirements like venues and supplies, ensuring their provision for events.\n" +
+        "• Collaborate with the financial division on the fiscal system for procuring necessary goods during events.\n" +
+        "• Coordinate with the secretarial division on official communications for securing venues during event series.",
+      logo: logoUi,
+      title: "Universitas Indonesia",
     },
     {
-      company: "Our Humble Beginings",
+      company: "Staff of Career Development and Entrepreneurship Department",
       position: "2009 - 2011",
-      duration: "December 2022 - Present",
+      head: "Himpunan Mahasiswa Departemen Matematika FMIPA UI",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-      logo: logoHima,
-      title: "HMSK Gunadarma",
-    },
-    {
-      company: "Our Humble Beginings",
-      position: "2009 - 2011",
-      duration: "December 2022 - Present",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-      logo: logoHima,
+        "• Engage in initiatives facilitated by the Career Development and Entrepreneur Department for Mathematics students, aimed at enhancing post-academic life. These initiatives encompass practical interview sessions, entrepreneurial courses, entrepreneurial projects including managing an Instagram feed, and webinars and workshops pertinent to careers in the field of Mathematics.\n" +
+        "• Collaborate with other staff by carrying out different tasks in each project.\n",
+      logo: logoUi,
       title: "HMSK Gunadarma",
     },
   ];
@@ -75,27 +68,30 @@ export const OrganizationExp = () => {
                 className="d-flex align-items-center justify-content-center"
               >
                 <TrackVisibility once>
-            {({ isVisible }) => (
-              <div
-                className={
-                  isVisible ? "animate__animated animate__slideInRight" : ""
-                }
-              >
-
-                <div className="company-details">
-                  <h3>{experience.position}</h3>
-                  <p className="bold-company-org">{experience.company}</p>
-                  {experience.description
-                    .split("\n")
-                    .map((point, pointIndex) => (
-                      <p key={pointIndex} className="description">
-                        {point}
-                      </p>
-                    ))}
-                </div>
-                </div>
-                )}
-
+                  {({ isVisible }) => (
+                    <div
+                      className={
+                        isVisible
+                          ? "animate__animated animate__slideInRight"
+                          : ""
+                      }
+                    >
+                      <div className="company-details">
+                        <h3>{experience.position}</h3>
+                        <h5 className="bold-company-org">
+                          {experience.company}
+                        </h5>
+                        <h5 className="bold-company-org">{experience.head}</h5>
+                        {experience.description
+                          .split("\n")
+                          .map((point, pointIndex) => (
+                            <p key={pointIndex} className="description">
+                              {point}
+                            </p>
+                          ))}
+                      </div>
+                    </div>
+                  )}
                 </TrackVisibility>
               </Col>
             </React.Fragment>

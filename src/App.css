@@ -99,9 +99,21 @@ color: red;
     background-color: #C69774;
   }
 
+
+
   nav.navbar.scrolled {
-    padding: 15px 0;
     background-color: #C69774;
+    }
+
+    .project-container-overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .banner {
+      padding: 130px 0 100px 0;
     }
 }
 

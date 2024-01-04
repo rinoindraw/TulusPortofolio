@@ -1,11 +1,13 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import skill1 from "../../assets/img/datascient.png";
-import skill2 from "../../assets/img/datascient.png";
-import skill3 from "../../assets/img/datascient.png";
-import skill4 from "../../assets/img/datascient.png";
-import androidDev from "../../assets/img/datascient.png";
-import roboticsDev from "../../assets/img/datascient.png";
+import skill1 from "../../assets/img/tensorflow.png";
+import skill2 from "../../assets/img/data.png";
+import skill3 from "../../assets/img/dataanalysis.png";
+import skill4 from "../../assets/img/deeplearning.png";
+import skill5 from "../../assets/img/python.png";
+import skill6 from "../../assets/img/office.png";
+import skill7 from "../../assets/img/sql.png";
+import skill8 from "../../assets/img/math.png";
 // import colorSharp from "../../assets/img/fototulus.jpeg";
 import "./skill.css";
 import "animate.css";
@@ -36,20 +38,24 @@ export const Skill = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-            <TrackVisibility>
-            {({ isVisible }) => (
-              <div
-                className={
-                  isVisible ? "animate__animated animate__lightSpeedInRight" : ""
-                }
-              >
-              <h2>Skills</h2>
-              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-              </div>
-            )}
-            </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible
+                        ? "animate__animated animate__lightSpeedInRight"
+                        : ""
+                    }
+                  >
+                    <h2>Skills</h2>
+                    <h4>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </h4>
+                  </div>
+                )}
+              </TrackVisibility>
               <Carousel
-            //   centerMode={true}
+                //   centerMode={true}
                 responsive={responsive}
                 infinite={true}
                 showDots={true}
@@ -60,77 +66,13 @@ export const Skill = () => {
                 <div className="item">
                   <div className="skill-item">
                     <div className="skill-inner">
-                      <img src={androidDev} alt="Skills" className="skill-img" />
-                      <div className="overlay">
-                        <h5>Android Developer</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Minima maxime quam architecto quo inventore
-                          harum ex magni, dicta impedit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="skill-item">
-                    <div className="skill-inner">
                       <img src={skill1} alt="Skills" className="skill-img" />
                       <div className="overlay">
-                        <h5>Web Developer</h5>
+                        <h5>Machine Learning</h5>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Minima maxime quam architecto quo inventore
-                          harum ex magni, dicta impedit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="skill-item">
-                    <div className="skill-inner">
-                      <img
-                        src={roboticsDev}
-                        alt="Skills"
-                        className="skill-img"
-                      />
-                      <div className="overlay">
-                        <h5>Robotics</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Minima maxime quam architecto quo inventore
-                          harum ex magni, dicta impedit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="skill-item">
-                    <div className="skill-inner">
-                      <img src={skill2} alt="Skills" className="skill-img" />
-                      <div className="overlay">
-                        <h5>Graphic Designer</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Minima maxime quam architecto quo inventore
-                          harum ex magni, dicta impedit.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="skill-item">
-                    <div className="skill-inner">
-                      <img src={skill3} alt="Skills" className="skill-img" />
-                      <div className="overlay">
-                        <h5>UX Designer</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Minima maxime quam architecto quo inventore
-                          harum ex magni, dicta impedit.
+                          Machine Learning is a branch of artificial
+                          intelligence that enables systems to learn and improve
+                          performance without explicit programming.
                         </p>
                       </div>
                     </div>
@@ -141,11 +83,101 @@ export const Skill = () => {
                     <div className="skill-inner">
                       <img src={skill4} alt="Skills" className="skill-img" />
                       <div className="overlay">
-                        <h5>Photography</h5>
+                        <h5>Deep Learning</h5>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Minima maxime quam architecto quo inventore
-                          harum ex magni, dicta impedit.
+                          Deep Learning is a subfield of Machine Learning that
+                          focuses on the use of neural networks for modeling and
+                          solving complex tasks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="skill-item">
+                    <div className="skill-inner">
+                      <img src={skill2} alt="Skills" className="skill-img" />
+                      <div className="overlay">
+                        <h5>Data Science</h5>
+                        <p>
+                          Data Science involves the analysis and interpretation
+                          of data to generate insights that support business
+                          decision-making.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="skill-item">
+                    <div className="skill-inner">
+                      <img src={skill3} alt="Skills" className="skill-img" />
+                      <div className="overlay">
+                        <h5>Data Analysis</h5>
+                        <p>
+                          Data Analysis is the process of examining,
+                          transforming, and visualizing data to gain valuable
+                          insights.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="skill-item">
+                    <div className="skill-inner">
+                      <img src={skill5} alt="Skills" className="skill-img" />
+                      <div className="overlay">
+                        <h5>Python (Programming Language)</h5>
+                        <p>
+                          Python is a versatile programming language often used
+                          in web development, data analysis, and Machine
+                          Learning.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="skill-item">
+                    <div className="skill-inner">
+                      <img src={skill6} alt="Skills" className="skill-img" />
+                      <div className="overlay">
+                        <h5>Ms. Office (Excel, Word, Powerpoint)</h5>
+                        <p>
+                          Ms. Office provides productivity applications like
+                          Excel, Word, and Powerpoint, valuable for office work
+                          and data analysis.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="skill-item">
+                    <div className="skill-inner">
+                      <img src={skill7} alt="Skills" className="skill-img" />
+                      <div className="overlay">
+                        <h5>SQL (Structured Query Language)</h5>
+                        <p>
+                          SQL is used to manage and retrieve data from
+                          relational databases, crucial for application
+                          development and data analysis.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item">
+                  <div className="skill-item">
+                    <div className="skill-inner">
+                      <img src={skill8} alt="Skills" className="skill-img" />
+                      <div className="overlay">
+                        <h5>Mathematics</h5>
+                        <p>
+                          Mathematics plays a crucial role in data analysis,
+                          Machine Learning, and many other computer science
+                          fields.
                         </p>
                       </div>
                     </div>
