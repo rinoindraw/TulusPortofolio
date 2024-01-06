@@ -14,62 +14,73 @@
   font-weight: 400;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
-body{
+body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #F8FAE5 !important;
-  color: #FB8B24 !important;
-  font-family: 'Centra', sans-serif !important;
+  background-color: #f8fae5 !important;
+  color: #fb8b24 !important;
+  font-family: "Centra", sans-serif !important;
 }
 
-h1 ,h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
 }
 
-p, a, li, button, ul {
-margin: 0;
-padding: 0;
-line-height: normal;
-text-decoration: none;
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
 }
 
 a:hover {
-text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
 button {
-border: 0;
-background-color: transparent;
+  border: 0;
+  background-color: transparent;
 }
 
-input:focus, textarea:focus, select:focus {
-outline: none;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 
-@media (min-width:1700px) {
+@media (min-width: 1700px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -77,14 +88,14 @@ outline: none;
 }
 
 p.success {
-color: green;
+  color: green;
 }
 
 p.danger {
-color: red;
+  color: red;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .Introduction h1 {
     font-size: 2em;
   }
@@ -99,38 +110,38 @@ color: red;
     font-size: 1em;
   }
 
-  nav{
-    background-color: #C69774;
+  nav {
+    background-color: #c69774;
   }
 
-
-
   nav.navbar.scrolled {
-    background-color: #C69774;
-    }
+    background-color: #c69774;
+  }
 
-    .project-container-overlay {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
+  .project-container-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .banner {
-      padding: 150px 0 100px 0;
-    }
+  .banner {
+    padding: 250px 0 100px 0;
+  }
 
-    .skill-bx {
-      background-color: transparent;
-      -webkit-box-shadow:1px 10px 15px transparent;
-    -moz-box-shadow:1px 10px 15px transparent;
-    box-shadow:1px 10px 15px transparent;
-    }
+  .skill-bx {
+    background-color: transparent;
+    -webkit-box-shadow: 1px 10px 15px transparent;
+    -moz-box-shadow: 1px 10px 15px transparent;
+    box-shadow: 1px 10px 15px transparent;
+  }
 
-    .background-image-left {
-      top: 82%;
-      width: 180px;
-    }
+  .background-image-left {
+    top: 82%;
+    width: 180px;
+  }
+
+  .certificate-item .certif-img {
+    height: 100%;
+  }
 }
-
-  
