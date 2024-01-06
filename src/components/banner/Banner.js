@@ -14,7 +14,7 @@ export const Banner = () => {
   useEffect(() => {
     const typewriter = new Typewriter(typewriterRef.current, {
       strings: [
-        "Longlife learner",
+        "Longlife Learner",
         "Data Enthusiast",
         "A Man of Culture",
         "Keep Scrolling!",

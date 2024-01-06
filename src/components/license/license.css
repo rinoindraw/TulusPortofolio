@@ -10,7 +10,7 @@
   }
   
   .certificate-item .certif-img {
-    height: 100%;
+    height: 390px;
   }
   
   .certif-desc {
@@ -72,12 +72,12 @@
     z-index: 1000;
   }
 
-  .overlay-image-ux {
+  .overlay-container-license .overlay-image-ux {
     max-height: 560px;
     margin-top: 80px;
   }
   
-  .overlay-image-ux img {
+  .overlay-container-license .overlay-image-ux img {
     max-width: 100%;
     max-height: 100%;
   } 
@@ -104,4 +104,15 @@
   
   .license-icon .left-anim:hover svg {
     margin-right: 50px;
+  }
+
+  .license-experience h2 {
+    color: #000;
+    font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  }
+  .license-header {
+    margin-top: 20px;
   }

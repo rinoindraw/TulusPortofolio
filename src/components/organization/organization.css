@@ -3,6 +3,7 @@
   font-weight: 700;
   text-align: center;
   color: #000;
+  margin-bottom: 35px;
 }
 
 .org-experience p {
@@ -19,14 +20,13 @@
   letter-spacing: 0.8px;
   font-weight: bold;
   line-height: 1.5em;
-  margin-bottom: 5px;
 }
 
-.org-experience h4 {
+/* .org-experience h4 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-}
+} */
 
 .company-logo {
   margin-top: 15px;

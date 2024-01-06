@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import certifBangkit from "../../assets/license/certificateBangkit.jpg";
-import certifData from "../../assets/license/certifData.jpg";
+import certifBangkit from "../../assets/img/license/certBangkit.jpg";
+import certifData from "../../assets/img/license/courseragoogledata.jpg";
+import certifBpjs from "../../assets/img/license/bpjscerti.jpg";
+import certDeepLearnig from "../../assets/img/license/courseradeeplearning.jpg";
+import certMachine from "../../assets/img/license/courseramachinelearning.jpg";
+import certMath from "../../assets/img/license/courseramath.jpg";
+import certCourseraTensorflow from "../../assets/img/license/courseratensorflow.jpg";
+import certTensorflow from "../../assets/img/license/tensorflowcert.jpg";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "animate.css";
@@ -11,14 +17,44 @@ import "./license.css";
 export const License = () => {
   const certificate = [
     {
+      image: certTensorflow,
+      desc: "TensorFlow Developer Certificate",
+      hover: "TensorFlow",
+    },
+    {
       image: certifBangkit,
       desc: "Certificate of Completion",
       hover: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
     },
     {
+      image: certifBpjs,
+      desc: "3rd Place in the Machine Learning Category",
+      hover: "BPJS KESEHATAN HEALTHKATON 2022",
+    },
+    {
+      image: certCourseraTensorflow,
+      desc: "TensorFlow: Data and Deployment",
+      hover: "Coursera",
+    },
+    {
+      image: certMachine,
+      desc: "Machine Learning",
+      hover: "Coursera",
+    },
+    {
+      image: certDeepLearnig,
+      desc: "DeepLearning.AI TensorFlow Developer",
+      hover: "Coursera",
+    },
+    {
       image: certifData,
-      desc: "Certificate of Completion",
-      hover: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+      desc: "Google Data Analytics",
+      hover: "Coursera",
+    },
+    {
+      image: certMath,
+      desc: "Mathematics for Machine Learning",
+      hover: "Coursera",
     },
   ];
 
@@ -33,7 +69,7 @@ export const License = () => {
   };
 
   return (
-    <section className="org-experience" id="license">
+    <section className="license-experience" id="license">
       <Container>
         <div className="experience-wrapper">
           <TrackVisibility>
@@ -45,7 +81,7 @@ export const License = () => {
                     : ""
                 }
               >
-                <h2>License</h2>
+                <h2 className="license-header">License</h2>
 
                 <div className="license-icon">
                   <a
@@ -62,7 +98,7 @@ export const License = () => {
           </TrackVisibility>
           <Row>
             {certificate.map((cert, index) => (
-              <Col key={index} xs={11} md={12} className="mx-auto">
+              <Col key={index} xs={11} md={6} className="mx-auto">
                 <div
                   className="certificate-item"
                   onClick={() => openLightboxUx(cert.image)}

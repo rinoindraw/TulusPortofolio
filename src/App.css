@@ -95,6 +95,10 @@ color: red;
     margin: 1em 0;
   }
 
+  .Introduction h2 span {
+    font-size: 1em;
+  }
+
   nav{
     background-color: #C69774;
   }
@@ -113,7 +117,19 @@ color: red;
     }
 
     .banner {
-      padding: 130px 0 100px 0;
+      padding: 150px 0 100px 0;
+    }
+
+    .skill-bx {
+      background-color: transparent;
+      -webkit-box-shadow:1px 10px 15px transparent;
+    -moz-box-shadow:1px 10px 15px transparent;
+    box-shadow:1px 10px 15px transparent;
+    }
+
+    .background-image-left {
+      top: 82%;
+      width: 180px;
     }
 }
 

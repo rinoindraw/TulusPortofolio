@@ -42,7 +42,6 @@ export const Experience = () => {
                 }
               >
                 <h2>Experience</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
               </div>
             )}
           </TrackVisibility>
@@ -52,7 +51,7 @@ export const Experience = () => {
                 xs={12}
                 sm={12}
                 md={7}
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center mb-5"
               >
                 <TrackVisibility once>
                   {({ isVisible }) => (
@@ -82,7 +81,7 @@ export const Experience = () => {
                 xs={12}
                 sm={12}
                 md={3}
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center mb-5"
               >
                 <div className="company-logo">
                   <img src={experience.logo} alt={experience.company} />

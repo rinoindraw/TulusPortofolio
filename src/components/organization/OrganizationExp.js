@@ -20,13 +20,13 @@ export const OrganizationExp = () => {
     },
     {
       company: "Staff of Career Development and Entrepreneurship Department",
-      position: "2009 - 2011",
+      position: "March 2021 - February 2022",
       head: "Himpunan Mahasiswa Departemen Matematika FMIPA UI",
       description:
         "• Engage in initiatives facilitated by the Career Development and Entrepreneur Department for Mathematics students, aimed at enhancing post-academic life. These initiatives encompass practical interview sessions, entrepreneurial courses, entrepreneurial projects including managing an Instagram feed, and webinars and workshops pertinent to careers in the field of Mathematics.\n" +
         "• Collaborate with other staff by carrying out different tasks in each project.\n",
       logo: logoUi,
-      title: "HMSK Gunadarma",
+      title: "Universitas Indonesia",
     },
   ];
 
@@ -42,7 +42,6 @@ export const OrganizationExp = () => {
                 }
               >
                 <h2>Organization</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
               </div>
             )}
           </TrackVisibility>
@@ -52,7 +51,7 @@ export const OrganizationExp = () => {
                 xs={12}
                 sm={12}
                 md={3}
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center mb-5"
               >
                 <div className="company-logo">
                   <img src={experience.logo} alt={experience.company} />
@@ -65,7 +64,7 @@ export const OrganizationExp = () => {
                 xs={12}
                 sm={12}
                 md={7}
-                className="d-flex align-items-center justify-content-center"
+                className="d-flex align-items-center justify-content-center mb-5"
               >
                 <TrackVisibility once>
                   {({ isVisible }) => (

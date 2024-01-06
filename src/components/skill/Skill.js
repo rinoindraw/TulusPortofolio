@@ -11,6 +11,7 @@ import skill8 from "../../assets/img/math.png";
 // import colorSharp from "../../assets/img/fototulus.jpeg";
 import "./skill.css";
 import "animate.css";
+import colorBackground from "../../assets/img/colorbg.png";
 import TrackVisibility from "react-on-screen";
 
 export const Skill = () => {
@@ -48,9 +49,6 @@ export const Skill = () => {
                     }
                   >
                     <h2>Skills</h2>
-                    <h4>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </h4>
                   </div>
                 )}
               </TrackVisibility>
@@ -188,6 +186,7 @@ export const Skill = () => {
           </div>
         </div>
       </div>
+      <img className="background-image-left" src={colorBackground} alt="color" />
     </section>
   );
 };

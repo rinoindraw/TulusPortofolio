@@ -3,7 +3,8 @@
     font-weight: 700;
     text-align: center;
     color: #000;
-    margin-top: 25px;
+    margin-top: 55px;
+    margin-bottom: 35px;
   }
   
   .ach-experience p {
@@ -12,13 +13,23 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
   }
+
+  .ach-experience {
+    text-align: center;
+    /* background-color: red; */
+  }
   
   .ach-experience h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 21px;
     letter-spacing: 0.8px;
     font-weight: bold;
     line-height: 1.5em;
+    margin-bottom: 5px;
+  }
+
+  .ach-experience h5 {
+    margin-bottom: 5px;
   }
   
   .ach-experience h4 {
@@ -26,7 +37,7 @@
     margin-top: 10px;
   }
   
-  .company-logo {
+  .ach-experience .company-logo {
     margin-top: 15px;
     position: relative;
     margin-bottom: 24px;
@@ -35,9 +46,9 @@
     height: auto; 
   }
   
-  .company-logo img {
+  .ach-experience .company-logo img {
     width: 100%;
-  
+    /* height: 360px; */
     border-radius: 30px;
   }
   
@@ -86,7 +97,7 @@
   }
   
   .company-details {
-    width: 96%;
+    /* width: 96%; */
     /* text-align: justify; */
     padding: 0 0
   }

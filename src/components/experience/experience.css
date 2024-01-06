@@ -3,7 +3,8 @@
   font-weight: 700;
   text-align: center;
   color: #000;
-  margin-top: 55px;
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 
 .my-experience p {
@@ -29,11 +30,11 @@
   font-weight: bold;
 }
 
-.my-experience h4 {
+/* .my-experience h4 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-}
+} */
 
 .company-logo {
   margin-top: 15px;

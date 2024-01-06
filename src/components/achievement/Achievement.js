@@ -1,7 +1,7 @@
 import React from "react";
-import gdsc from "../../assets/img/logo.png";
 import { Container, Row, Col } from "react-bootstrap";
-import logoHima from "../../assets/img/datascient.png";
+import healthkaton from "../../assets/img/healthkathon.png";
+import bpjs from "../../assets/img/bpjs.jpg";
 import "./achievement.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -9,30 +9,21 @@ import TrackVisibility from "react-on-screen";
 export const Achievement = () => {
   const experiences = [
     {
-      company: "Our Humble Beginings",
-      position: "2009 - 2011",
-      duration: "December 2022 - Present",
+      company: "BPJS Kesehatan",
+      position: "3rd Winner of Healthkathon 2022",
+      duration: "Machine Learning Category",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-      logo: gdsc,
-      title: "HMSK Gunadarma",
+      logo: bpjs,
+      title: "Healthkathon 2022",
     },
     {
-      company: "Our Humble Beginings",
-      position: "2009 - 2011",
-      duration: "December 2022 - Present",
+      company: "BPJS Kesehatan",
+      position: "Top 45, Final Stage of Healthkathon 2023",
+      duration: "Data Analytics dan Visualization Category",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-      logo: logoHima,
-      title: "HMSK Gunadarma",
-    },
-    {
-      company: "Our Humble Beginings",
-      position: "2009 - 2011",
-      duration: "December 2022 - Present",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-      logo: logoHima,
+      logo: healthkaton,
       title: "HMSK Gunadarma",
     },
   ];
@@ -49,7 +40,6 @@ export const Achievement = () => {
                 }
               >
                 <h2>Achievement</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
               </div>
             )}
           </TrackVisibility>
@@ -58,7 +48,7 @@ export const Achievement = () => {
               <Col
                 xs={12}
                 sm={12}
-                md={3}
+                md={4}
                 className="d-flex align-items-center justify-content-center"
               >
                 <div className="company-logo">
@@ -71,31 +61,29 @@ export const Achievement = () => {
               <Col
                 xs={12}
                 sm={12}
-                md={7}
+                md={5}
                 className="d-flex align-items-center justify-content-center"
               >
                 <TrackVisibility once>
-            {({ isVisible }) => (
-              <div
-                className={
-                  isVisible ? "animate__animated animate__slideInRight" : ""
-                }
-              >
-
-                <div className="company-details">
-                  <h3>{experience.position}</h3>
-                  <p className="bold-company-ach">{experience.company}</p>
-                  {experience.description
-                    .split("\n")
-                    .map((point, pointIndex) => (
-                      <p key={pointIndex} className="description">
-                        {point}
-                      </p>
-                    ))}
-                </div>
-                </div>
-                )}
-
+                  {({ isVisible }) => (
+                    <div
+                      className={
+                        isVisible
+                          ? "animate__animated animate__slideInRight"
+                          : ""
+                      }
+                    >
+                      <div className="company-details">
+                        <h3>{experience.position}</h3>
+                        <h5 className="bold-company-ach">
+                          {experience.duration}
+                        </h5>
+                        <h5 className="bold-company-ach">
+                          {experience.company}
+                        </h5>
+                      </div>
+                    </div>
+                  )}
                 </TrackVisibility>
               </Col>
             </React.Fragment>
