@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import certifBangkit from "../../assets/img/license/certBangkit.jpg";
 import certifData from "../../assets/img/license/courseragoogledata.jpg";
-import certifBpjs from "../../assets/img/license/bpjscerti.jpg";
+import certifBpjs from "../../assets/img/license/certBpjs.jpg";
 import certDeepLearnig from "../../assets/img/license/courseradeeplearning.jpg";
 import certMachine from "../../assets/img/license/courseramachinelearning.jpg";
 import certMath from "../../assets/img/license/courseramath.jpg";
@@ -81,7 +81,7 @@ export const License = () => {
                     : ""
                 }
               >
-                <h2 className="license-header">License</h2>
+                <h2 className="license-header">Certifications</h2>
 
                 <div className="license-icon">
                   <a

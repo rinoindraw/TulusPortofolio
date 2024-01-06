@@ -122,7 +122,7 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("license")}
             >
-              License
+              Certifications
             </Nav.Link>{" "}
           </Nav>
         </Navbar.Collapse>

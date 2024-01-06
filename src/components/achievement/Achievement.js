@@ -24,7 +24,7 @@ export const Achievement = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
       logo: healthkaton,
-      title: "HMSK Gunadarma",
+      title: "Healthkathon 2023",
     },
   ];
 
