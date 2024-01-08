@@ -57,7 +57,7 @@ export const Banner = () => {
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
         <a
-          href="mailto:indrraaaw@gmail.com"
+          href="mailto:tulus.setiawan01@sci.ui.ac.id"
           target="_blank"
           className="icons"
           rel="noreferrer"

@@ -8,207 +8,138 @@ import TrackVisibility from "react-on-screen";
 import "./project.css";
 import work1 from "../../assets/img/portotulus1.jpeg";
 import work2 from "../../assets/img/datascient.png";
+import teethCare from "../../assets/img/teethcare.png";
+import nlp from "../../assets/img/nlp.jpg";
+import geneExpression from "../../assets/img/dataset-cover.png";
+import healthBoard from "../../assets/img/healthboard.png";
+import xgboost from "../../assets/img/xgboost.png";
+import sqlSystem from "../../assets/img/sqlsystem.jpg";
 
 export const Project = () => {
-  const projects = [
+  const computerVision = [
     {
-      title: "Tulus Porto",
-      description: "Tulus Porto",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Tulus Porto",
-      description: "Tulus Porto",
-      imgUrl: work2,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Tulus Porto",
-      description: "Tulus Porto",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Tulus Porto",
-      description: "Tulus Porto",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
+      title: "TeethCare",
+      description: "Capstone Project, Bangkit Academy",
+      imgUrl: teethCare,
+      overview: (
+        <>
+          • Constructed a Computer Vision model for image classification,
+          utilizing the Efficientnet V2M model architecture. This model was
+          specifically trained to classify dental diseases in this project,
+          achieving an AUC score of 88.98%.
+          <br />
+        </>
+      ),
+      github: "https://github.com/Jendma/TeethCare-Machine-Learning",
     },
   ];
-  const secondtab = [
+  const predictiveAnalytics = [
     {
-      title: "Logo Designer",
-      description: "Graphic Designer",
-      imgUrl: work1,
-      tabType: "secondtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
+      title: "Gene Expression",
+      description: "Data Science Genome",
+      imgUrl: geneExpression,
+      overview: (
+        <>
+          • Implemented K-means and Hierarchical clustering models for brain
+          cancer gene expression analysis.
+          <br />
+          • Constructed Logistic Regression and XGBoost Classifier models for
+          classifying brain cancer gene expression.
+          <br />
+          • Utilized differential expression and statistical methods to identify
+          genes with altered expression levels in breast cancer gene expression.
+          <br />
+          • Pioneered the development of informative and interactive dashboards,
+          leveraging geographic data to foster a culture of data-driven
+          decision-making.
+          <br />
+          • Created dashboards to visualize demographic information, facility
+          preferences, and health issue distribution of BPJS Kesehatan
+          participants.
+          <br />
+        </>
+      ),
+      github: "https://github.com/rinoindraw/WebChat",
     },
     {
-      title: "Creative Poster",
-      description: "Graphic Designer",
-      imgUrl: work1,
-      tabType: "secondtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Logo Designer",
-      description: "Graphic Designer",
-      imgUrl: work1,
-      tabType: "secondtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Logo Designer",
-      description: "Graphic Designer",
-      imgUrl: work1,
-      tabType: "secondtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-  ];
-  const thirdtab = [
-    {
-      title: "Home",
-      description: "UI/UX Designer",
-      imgUrl: work1,
-      tabType: "thirdtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Details",
-      description: "UI/UX Designer",
-      imgUrl: work1,
-      tabType: "thirdtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Keranjang",
-      description: "UI/UX Designer",
-      imgUrl: work1,
-      tabType: "thirdtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Konfirmasi",
-      description: "UI/UX Designer",
-      imgUrl: work1,
-      tabType: "thirdtab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
+      title: "Inefficient Claim Detection",
+      description: "Machine Learning",
+      imgUrl: xgboost,
+      overview: (
+        <>
+          • Implemented an XGBoost model to classify claim inefficiencies among
+          BPJS Kesehatan participants.
+          <br />• The model demonstrated high performance with an accuracy score
+          of 99.4% and a precision score of 95.2%.
+        </>
+      ),
+      github: "https://github.com/rinoindraw/WebChat",
     },
   ];
-  const webtab = [
+  const dataAnalyticsVisualization = [
     {
-      title: "SARI Technology System Login Web",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "SARI Technology System Login Web",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Profile React Js",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Bookshelf App",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
+      title: "HealthBoard",
+      description: "Data Analytics and Visualization",
+      imgUrl: healthBoard,
+      overview: (
+        <>
+          • Pioneered the development of informative and interactive dashboards,
+          leveraging geographic data to foster a culture of data-driven
+          decision-making.
+          <br />
+          • Created dashboards to visualize demographic information, facility
+          preferences, and health issue distribution of BPJS Kesehatan
+          participants.
+          <br />
+        </>
+      ),
+      github: "https://github.com/rinoindraw/WebChat",
     },
   ];
-  const fifthtab = [
+  const naturalLanguageProcessing = [
     {
-      title: "SARI Technology System Login Web",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
+      title: "Sentiment Analysis Topic Detection",
+      description: "Web Mining",
+      imgUrl: nlp,
+      overview: (
+        <>
+          • Constructed NLP models for Sentiment Analysis and Topic Detection,
+          specifically analyzing tweets about ChatGPT from March 2023. <br />
+          • Developed a Sentiment Analysis model using the BERT Pretrained
+          model, achieving an accuracy score of 88% on tweets about the 2014
+          Presidential Election.
+          <br />
+        </>
+      ),
+      github: "https://github.com/rinoindraw/WebChat",
     },
+  ];
+  const sqlTab = [
     {
-      title: "SARI Technology System Login Web",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Profile React Js",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
-    },
-    {
-      title: "Bookshelf App",
-      description: "Web Developer",
-      imgUrl: work1,
-      tabType: "firsttab",
-      overview:
-        "Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.",
-        github: "https://github.com/rinoindraw/WebChat"
+      title: "E-commerce System Database",
+      description: "Database",
+      imgUrl: sqlSystem,
+      overview: (
+        <>
+          • Developed an e-commerce database to aid management decisions.
+          <br />
+          • Utilizing SQLite software and Google Colab's sqlite3 module for data
+          wrangling, database creation, and data analysis.
+          <br />
+        </>
+      ),
+      github: "https://github.com/rinoindraw/WebChat",
     },
   ];
   const [lightboxData, setLightboxData] = useState({
     image: null,
     overview: null,
     title: null,
-    github: null
+    github: null,
   });
 
   const closeLightbox = () => {
-    setLightboxData({ image: null, overview: null, title: null, github: null});
+    setLightboxData({ image: null, overview: null, title: null, github: null });
   };
 
   const openLightbox = (image, overview, title, github) => {
@@ -238,7 +169,7 @@ export const Project = () => {
                   <h2>Projects</h2>
                   <div className="linkproject">
                     <a
-                      href="https://github.com/Jendma"
+                      href="https://github.com/Jendma?tab=repositories"
                       target="_blank"
                       className="icons"
                       rel="noreferrer"
@@ -278,12 +209,17 @@ export const Project = () => {
               <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
                   <Row className="firsttab">
-                    {webtab.map((project, index) => (
+                    {naturalLanguageProcessing.map((project, index) => (
                       <Col key={index} xs={11} md={4} className="mx-auto mb-5">
                         <ProjectCard
                           {...project}
                           onClick={() =>
-                            openLightbox(project.imgUrl, project.overview, project.title, project.github)
+                            openLightbox(
+                              project.imgUrl,
+                              project.overview,
+                              project.title,
+                              project.github
+                            )
                           }
                         />
                       </Col>
@@ -292,12 +228,17 @@ export const Project = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="fourth">
                   <Row className="thirdtab">
-                    {projects.map((project, index) => (
+                    {computerVision.map((project, index) => (
                       <Col key={index} xs={10} md={4} className="mx-auto mb-5">
                         <ProjectCard
                           {...project}
                           onClick={() =>
-                            openLightbox(project.imgUrl, project.overview, project.title, project.github)
+                            openLightbox(
+                              project.imgUrl,
+                              project.overview,
+                              project.title,
+                              project.github
+                            )
                           }
                         />
                       </Col>
@@ -306,12 +247,17 @@ export const Project = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <Row className="thirdtab">
-                    {thirdtab.map((project, index) => (
+                    {dataAnalyticsVisualization.map((project, index) => (
                       <Col key={index} xs={10} md={4} className="mx-auto mb-5">
                         <ProjectCard
                           {...project}
                           onClick={() =>
-                            openLightbox(project.imgUrl, project.overview, project.title, project.github)
+                            openLightbox(
+                              project.imgUrl,
+                              project.overview,
+                              project.title,
+                              project.github
+                            )
                           }
                         />
                       </Col>
@@ -320,12 +266,17 @@ export const Project = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <Row className="secondtab">
-                    {secondtab.map((project, index) => (
-                      <Col key={index} xs={11} md={4} className="mx-auto mb-5">
+                    {predictiveAnalytics.map((project, index) => (
+                      <Col key={index} xs={11} md={5} className="mx-auto mb-5">
                         <ProjectCard
                           {...project}
                           onClick={() =>
-                            openLightbox(project.imgUrl, project.overview, project.title, project.github)
+                            openLightbox(
+                              project.imgUrl,
+                              project.overview,
+                              project.title,
+                              project.github
+                            )
                           }
                         />
                       </Col>
@@ -334,12 +285,17 @@ export const Project = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="fifth">
                   <Row className="fifthtab">
-                    {fifthtab.map((project, index) => (
+                    {sqlTab.map((project, index) => (
                       <Col key={index} xs={11} md={4} className="mx-auto mb-5">
                         <ProjectCard
                           {...project}
                           onClick={() =>
-                            openLightbox(project.imgUrl, project.overview, project.title, project.github)
+                            openLightbox(
+                              project.imgUrl,
+                              project.overview,
+                              project.title,
+                              project.github
+                            )
                           }
                         />
                       </Col>
@@ -363,13 +319,13 @@ export const Project = () => {
                   <h4>{lightboxData.title}</h4>
                   <p>{lightboxData.overview}</p>
                   <a
-                      href={lightboxData.github}
-                      target="_blank"
-                      className="icons"
-                      rel="noreferrer"
-                    >
-                      <FontAwesomeIcon icon={faGithub} size="2x" />
-                    </a>
+                    href={lightboxData.github}
+                    target="_blank"
+                    className="icons"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                  </a>
                 </div>
               </div>
             </div>
