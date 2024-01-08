@@ -12,8 +12,6 @@ export const Achievement = () => {
       company: "BPJS Kesehatan",
       position: "3rd Winner of Healthkathon 2022",
       duration: "Machine Learning Category",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
       logo: bpjs,
       title: "Healthkathon 2022",
     },
@@ -21,8 +19,6 @@ export const Achievement = () => {
       company: "BPJS Kesehatan",
       position: "Top 45, Final Stage of Healthkathon 2023",
       duration: "Data Analytics dan Visualization Category",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
       logo: healthkaton,
       title: "Healthkathon 2023",
     },
