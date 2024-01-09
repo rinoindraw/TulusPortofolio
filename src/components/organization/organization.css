@@ -12,6 +12,8 @@
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin-top: 10px;
+  text-align: justify;
+
 }
 
 .org-experience h3 {
@@ -28,7 +30,7 @@
   margin-bottom: 20px;
 } */
 
-.company-logo {
+.org-experience .company-logo {
   margin-top: 15px;
   position: relative;
   margin-bottom: 24px;
@@ -36,9 +38,9 @@
   height: auto; 
 }
 
-.company-logo img {
+.org-experience .company-logo img {
   width: 100%;
-
+  height: 260px;
   border-radius: 30px;
 }
 

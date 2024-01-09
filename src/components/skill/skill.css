@@ -1,71 +1,76 @@
 /*Skills*/
 .skill {
-    padding: 0 0 50px 0;
-    position: relative;
-  }
+  padding: 0 0 50px 0;
+  position: relative;
+}
 
-  .skill-bx {
-    background: none;
-    text-align: center;
-    margin-top: 50px;
-    background-color: rgba(251, 139, 36, 0.3); /* Warna #fb8b24 dengan opacity 0.5 */
-    /* padding: 60px 0; */
-    padding-top: 55px;
-    padding-bottom: 55px;
-    border-radius: 35px;
-    -webkit-box-shadow:1px 10px 15px #FB8B24;
-    -moz-box-shadow:1px 10px 15px #FB8B24;
-    box-shadow:1px 10px 15px #FB8B24;
-  }
+.skill-bx {
+  background: none;
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgba(
+    251,
+    139,
+    36,
+    0.3
+  ); /* Warna #fb8b24 dengan opacity 0.5 */
+  /* padding: 60px 0; */
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-radius: 35px;
+  -webkit-box-shadow: 1px 10px 15px #fb8b24;
+  -moz-box-shadow: 1px 10px 15px #fb8b24;
+  box-shadow: 1px 10px 15px #fb8b24;
+}
 
-  .skill h5 {
-    font-weight: bold;
-    margin: 15px 0;
-  }
+.skill h5 {
+  font-weight: bold;
+  margin: 15px 0;
+}
 
-  .skill h2 {
-    font-size: 45px;
-    font-weight: 700;
-    text-align: center;
-    color: #000;
-  }
+.skill h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
 
-  .skill h4  {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .skill p {
-      color: #000;
-      font-size: 18px;
-      letter-spacing: 0.8px;
-      line-height: 1.5em;
-      margin: 0 0 50px 0;
-      font-weight: 300;
-  }
+.skill h4 {
+  text-align: center;
+  margin-top: 10px;
+}
 
-  .skill-slider {
-    max-width: 100%;
-    margin: 25px auto;
-    position: relative;
-  } 
+.skill p {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 0 0 50px 0;
+  font-weight: 300;
+}
 
-   .skill-slider .item .skill-item{
-    max-width: 100%;
-    padding: 25px 15px;
-  }  
+.skill-slider {
+  max-width: 100%;
+  margin: 25px auto;
+  position: relative;
+}
 
-  .skill-slider .item .skill-inner img {
-    margin-bottom: 35px;
-    width: 60%;
-    height: 250px;
-  }
+.skill-slider .item .skill-item {
+  max-width: 100%;
+  padding: 25px 15px;
+}
 
-  .background-image-left {
-    top: 76%;
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    width: 360px;
-    z-index: -4;
-  }
+.skill-slider .item .skill-inner img {
+  margin-bottom: 35px;
+  width: 60%;
+  height: 250px;
+}
+
+.background-image-left {
+  top: 76%;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 360px;
+  z-index: -4;
+}

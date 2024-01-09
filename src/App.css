@@ -144,4 +144,21 @@ p.danger {
   .certificate-item .certif-img {
     height: 100%;
   }
+
+  .about img {
+    display: none;
+  }
+
+  .my-experience .company-logo img {
+    height: 260px;
+  }
+
+  .social-icon {
+    display: none;
+  }
+
+  .ach-experience .company-logo img {
+    height: 100%;
+  }
+  
 }

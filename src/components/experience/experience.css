@@ -13,11 +13,12 @@
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin-top: 10px;
+  text-align: justify;
 }
 
 .my-experience h3 {
   color: #000;
-  text-align: end;
+  text-align: start;
   font-size: 24px;
   letter-spacing: 0.8px;
   font-weight: bold;
@@ -26,7 +27,7 @@
 }
 
 .boldCompany {
-  text-align: end;
+  text-align: start;
   font-weight: bold;
 }
 
@@ -36,7 +37,7 @@
   margin-bottom: 20px;
 } */
 
-.company-logo {
+.my-experience .company-logo {
   margin-top: 15px;
   position: relative;
   margin-bottom: 24px;
@@ -45,7 +46,7 @@
   height: auto;
 }
 
-.company-logo img {
+.my-experience .company-logo img {
   width: 100%;
 
   border-radius: 30px;

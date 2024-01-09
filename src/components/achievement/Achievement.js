@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import healthkaton from "../../assets/img/healthkathon.png";
 import bpjs from "../../assets/img/bpjs.jpg";
+import bpjs2022 from "../../assets/img/bpjs2022.png";
 import "./achievement.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,15 +11,15 @@ export const Achievement = () => {
   const experiences = [
     {
       company: "BPJS Kesehatan",
-      position: "3rd Winner of Healthkathon 2022",
-      duration: "Machine Learning Category",
-      logo: bpjs,
+      award: "3rd Winner of Healthkathon 2022",
+      categories: "Machine Learning Category",
+      logo: bpjs2022,
       title: "Healthkathon 2022",
     },
     {
       company: "BPJS Kesehatan",
-      position: "Top 45, Final Stage of Healthkathon 2023",
-      duration: "Data Analytics dan Visualization Category",
+      award: "Top 45, Final Stage of Healthkathon 2023",
+      categories: "Data Analytics dan Visualization Category",
       logo: healthkaton,
       title: "Healthkathon 2023",
     },
@@ -70,9 +71,9 @@ export const Achievement = () => {
                       }
                     >
                       <div className="company-details">
-                        <h3>{experience.position}</h3>
+                        <h3>{experience.award}</h3>
                         <h5 className="bold-company-ach">
-                          {experience.duration}
+                          {experience.categories}
                         </h5>
                         <h5 className="bold-company-ach">
                           {experience.company}

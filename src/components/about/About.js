@@ -72,7 +72,6 @@ export const About = () => {
                     isVisible ? "animate__animated animate__slideInLeft" : ""
                   }
                 >
-                  {/* <span className="tagline">Welcome To My Website</span> */}
                   <h1>About Me</h1>
                   <p>
                    {summary}

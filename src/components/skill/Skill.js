@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import skill1 from "../../assets/img/tensorflow.png";
+import skill1 from "../../assets/img/ds.png";
 import skill2 from "../../assets/img/data.png";
 import skill3 from "../../assets/img/dataanalysis.png";
 import skill4 from "../../assets/img/deeplearning.png";
@@ -8,7 +8,6 @@ import skill5 from "../../assets/img/python.png";
 import skill6 from "../../assets/img/office.png";
 import skill7 from "../../assets/img/sql.png";
 import skill8 from "../../assets/img/math.png";
-// import colorSharp from "../../assets/img/fototulus.jpeg";
 import "./skill.css";
 import "animate.css";
 import colorBackground from "../../assets/img/colorbg.png";
@@ -186,7 +185,11 @@ export const Skill = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorBackground} alt="color" />
+      <img
+        className="background-image-left"
+        src={colorBackground}
+        alt="color"
+      />
     </section>
   );
 };

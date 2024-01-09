@@ -198,13 +198,19 @@
   font-size: 20px;
 }
 
+.text-card-wrapper p {
+  font-weight: 700;
+  margin-left: 15px;
+  text-align: justify;
+}
+
 .text-card-wrapper span {
   font-weight: 700;
 }
 
 .project-container {
   padding: 10px;
-  /* border-radius: 20px; */
+  border-radius: 20px;
   background-color: white;
   padding-bottom: 15px;
   -webkit-box-shadow:1px 5px 8px #FB8B24;

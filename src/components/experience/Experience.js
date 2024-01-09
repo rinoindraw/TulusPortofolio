@@ -9,8 +9,9 @@ import TrackVisibility from "react-on-screen";
 export const Experience = () => {
   const experiences = [
     {
-      company: "Laboratory Assistant - Department of Mathematics",
-      position: "March 2023 - July 2023",
+      position: "Laboratory Assistant",
+      company: "Department of Mathematics",
+      duration: "March 2023 - July 2023",
       description:
         "• Served as an instructor, delivering practicum, mentoring students, and fostering skill development in the field.\n" +
         "• Developed learning modules for hands-on practice in data science, machine learning, and mathematical programming in Numerical Differential Equations.\n" +
@@ -19,8 +20,9 @@ export const Experience = () => {
       title: "Universitas Indonesia",
     },
     {
-      company: "Study Independent - Machine Learning Cohort",
-      position: "February 2023 - July 2023",
+      position: "Study Independent",
+      company: "Machine Learning Cohort",
+      duration: "February 2023 - July 2023",
       description:
         "• Accomplished completion of courses in Data Analytics, Python Automation, Machine Learning, Deep Learning, Data, and Deployment. \n" +
         "• Collaborated with a multidisciplinary team, including Cloud Computing, Mobile Development, and Machine Learning divisions, on a Capstone Project\n" +
@@ -46,7 +48,20 @@ export const Experience = () => {
             )}
           </TrackVisibility>
           {experiences.map((experience, index) => (
-            <React.Fragment key={index}>
+            <React.Fragment key={index} className="exp-wrapper">
+              <Col
+                xs={12}
+                sm={12}
+                md={3}
+                className="d-flex align-items-center justify-content-center mb-5"
+              >
+                <div className="company-logo">
+                  <img src={experience.logo} alt={experience.position} />
+                  <div className="logo-hover">
+                    <h4>{experience.title}</h4>
+                  </div>
+                </div>
+              </Col>
               <Col
                 xs={12}
                 sm={12}
@@ -58,12 +73,13 @@ export const Experience = () => {
                     <div
                       className={
                         isVisible
-                          ? "animate__animated animate__slideInLeft"
+                          ? "animate__animated animate__slideInRight"
                           : ""
                       }
                     >
                       <div className="company-details">
-                        <h3>{experience.position}</h3>
+                        <h3>{experience.duration}</h3>
+                        <h5 className="boldCompany">{experience.position}</h5>
                         <h5 className="boldCompany">{experience.company}</h5>
                         {experience.description
                           .split("\n")
@@ -76,19 +92,6 @@ export const Experience = () => {
                     </div>
                   )}
                 </TrackVisibility>
-              </Col>
-              <Col
-                xs={12}
-                sm={12}
-                md={3}
-                className="d-flex align-items-center justify-content-center mb-5"
-              >
-                <div className="company-logo">
-                  <img src={experience.logo} alt={experience.company} />
-                  <div className="logo-hover">
-                    <h4>{experience.title}</h4>
-                  </div>
-                </div>
               </Col>
             </React.Fragment>
           ))}
