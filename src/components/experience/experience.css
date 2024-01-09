@@ -13,7 +13,7 @@
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin-top: 10px;
-  text-align: justify;
+  text-align: start;
 }
 
 .my-experience h3 {
@@ -48,6 +48,7 @@
 
 .my-experience .company-logo img {
   width: 100%;
+  /* height: 260px; */
 
   border-radius: 30px;
 }

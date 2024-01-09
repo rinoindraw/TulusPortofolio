@@ -1,5 +1,5 @@
 nav.navbar {
-  padding: 8px 0;
+  padding: 12px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -8,7 +8,7 @@ nav.navbar {
   }
 
   nav.navbar.scrolled {
-  padding: 8px 0;
+  padding: 12px 0;
   background-color: #C69774;
   }
 
@@ -28,7 +28,7 @@ nav.navbar {
   padding: 5px 20px;
   font-size: 18px;
   opacity: 0.5;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   display: inline-block;
   position: relative;
   align-items: center;
@@ -189,4 +189,9 @@ nav.navbar {
 
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
+  }
+
+  .header-brand {
+    font-size: 20px;
+    color: #f8fae5;
   }

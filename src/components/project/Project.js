@@ -49,14 +49,6 @@ export const Project = () => {
           • Utilized differential expression and statistical methods to identify
           genes with altered expression levels in breast cancer gene expression.
           <br />
-          • Pioneered the development of informative and interactive dashboards,
-          leveraging geographic data to foster a culture of data-driven
-          decision-making.
-          <br />
-          • Created dashboards to visualize demographic information, facility
-          preferences, and health issue distribution of BPJS Kesehatan
-          participants.
-          <br />
         </>
       ),
       github: "https://github.com/rinoindraw/WebChat",

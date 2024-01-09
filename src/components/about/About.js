@@ -88,7 +88,7 @@ export const About = () => {
               )}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5} className="d-flex align-items-center justify-content-center">
             <TrackVisibility once>
               {({ isVisible }) => (
                 <div

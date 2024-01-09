@@ -201,7 +201,7 @@
 .text-card-wrapper p {
   font-weight: 700;
   margin-left: 15px;
-  text-align: justify;
+  text-align: start;
 }
 
 .text-card-wrapper span {

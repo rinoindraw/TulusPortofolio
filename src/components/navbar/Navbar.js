@@ -36,7 +36,8 @@ export const NavBar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <img src={homeLogo} alt="RinoIndra." />
+          {/* <img src={homeLogo} alt="Tulus Setiawan." /> */}
+          <p className="header-brand">𝓣𝓾𝓵𝓾𝓼 𝓢𝓮𝓽𝓲𝓪𝔀𝓪𝓷</p>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -45,7 +46,7 @@ export const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="text-center mx-auto">
-          <Nav className="mx-auto">
+          <Nav className="me-auto">
             <Nav.Link
               href="#home"
               className={

@@ -146,7 +146,14 @@ p.danger {
   }
 
   .about img {
-    display: none;
+    /* display: none; */
+    animation: none;
+    margin-top: 20px;
+    /* width: 90%; */
+    /* margin-left: 20px; */
+    /* text-align: center; */
+    width: 320px;
+    /* height: 260px; */
   }
 
   .my-experience .company-logo img {
