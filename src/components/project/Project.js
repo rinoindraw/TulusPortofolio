@@ -21,15 +21,8 @@ export const Project = () => {
       title: "TeethCare",
       description: "Capstone Project, Bangkit Academy",
       imgUrl: teethCare,
-      overview: (
-        <>
-          • Constructed a Computer Vision model for image classification,
-          utilizing the Efficientnet V2M model architecture. This model was
-          specifically trained to classify dental diseases in this project,
-          achieving an AUC score of 88.98%.
-          <br />
-        </>
-      ),
+      overview:
+        "Constructed a Computer Vision model for image classification, utilizing the Efficientnet V2M model architecture. This model was specifically trained to classify dental diseases in this project, achieving an AUC score of 88.98%.",
       github: "https://github.com/Jendma/TeethCare-Machine-Learning",
     },
   ];
@@ -38,33 +31,19 @@ export const Project = () => {
       title: "Gene Expression",
       description: "Data Science Genome",
       imgUrl: geneExpression,
-      overview: (
-        <>
-          • Implemented K-means and Hierarchical clustering models for brain
-          cancer gene expression analysis.
-          <br />
-          • Constructed Logistic Regression and XGBoost Classifier models for
-          classifying brain cancer gene expression.
-          <br />
-          • Utilized differential expression and statistical methods to identify
-          genes with altered expression levels in breast cancer gene expression.
-          <br />
-        </>
-      ),
+      overview:
+        "Implemented K-means and Hierarchical clustering models for brain cancer gene expression analysis.\n" +
+        "Constructed Logistic Regression and XGBoost Classifier models for classifying brain cancer gene expression.\n" +
+        "Utilized differential expression and statistical methods to identify genes with altered expression levels in breast cancer gene expression.",
       github: "https://github.com/rinoindraw/WebChat",
     },
     {
       title: "Inefficient Claim Detection",
       description: "Machine Learning",
       imgUrl: xgboost,
-      overview: (
-        <>
-          • Implemented an XGBoost model to classify claim inefficiencies among
-          BPJS Kesehatan participants.
-          <br />• The model demonstrated high performance with an accuracy score
-          of 99.4% and a precision score of 95.2%.
-        </>
-      ),
+      overview:
+        "Implemented an XGBoost model to classify claim inefficiencies among BPJS Kesehatan participants.\n" +
+        "The model demonstrated high performance with an accuracy score of 99.4% and a precision score of 95.2%.",
       github: "https://github.com/rinoindraw/WebChat",
     },
   ];
@@ -73,18 +52,9 @@ export const Project = () => {
       title: "HealthBoard",
       description: "Data Analytics and Visualization",
       imgUrl: healthBoard,
-      overview: (
-        <>
-          • Pioneered the development of informative and interactive dashboards,
-          leveraging geographic data to foster a culture of data-driven
-          decision-making.
-          <br />
-          • Created dashboards to visualize demographic information, facility
-          preferences, and health issue distribution of BPJS Kesehatan
-          participants.
-          <br />
-        </>
-      ),
+      overview:
+        "Pioneered the development of informative and interactive dashboards, leveraging geographic data to foster a culture of data-driven decision-making.\n" +
+        "Created dashboards to visualize demographic information, facility preferences, and health issue distribution of BPJS Kesehatan participants.",
       github: "https://github.com/rinoindraw/WebChat",
     },
   ];
@@ -93,16 +63,10 @@ export const Project = () => {
       title: "Sentiment Analysis Topic Detection",
       description: "Web Mining",
       imgUrl: nlp,
-      overview: (
-        <>
-          • Constructed NLP models for Sentiment Analysis and Topic Detection,
-          specifically analyzing tweets about ChatGPT from March 2023. <br />
-          • Developed a Sentiment Analysis model using the BERT Pretrained
-          model, achieving an accuracy score of 88% on tweets about the 2014
-          Presidential Election.
-          <br />
-        </>
-      ),
+      overview:
+        "Constructed NLP models for Sentiment Analysis and Topic Detection, specifically analyzing tweets about ChatGPT from March 2023.\n" +
+        "Developed a Sentiment Analysis model using the BERT Pretrained model, achieving an accuracy score of 88% on tweets about the 2014 Presidential Election.",
+
       github: "https://github.com/rinoindraw/WebChat",
     },
   ];
@@ -111,15 +75,9 @@ export const Project = () => {
       title: "E-commerce System Database",
       description: "Database",
       imgUrl: sqlSystem,
-      overview: (
-        <>
-          • Developed an e-commerce database to aid management decisions.
-          <br />
-          • Utilizing SQLite software and Google Colab's sqlite3 module for data
-          wrangling, database creation, and data analysis.
-          <br />
-        </>
-      ),
+      overview:
+        "Developed an e-commerce database to aid management decisions.\n" +
+        "Utilizing SQLite software and Google Colab's sqlite3 module for data wrangling, database creation, and data analysis.",
       github: "https://github.com/rinoindraw/WebChat",
     },
   ];
@@ -138,11 +96,6 @@ export const Project = () => {
     // console.log("Opening lightbox:", image, overview);
     setLightboxData({ image, overview, title, github });
   };
-
-  //   const openLightboxUx = (image, overview) => {
-  //     console.log('Opening lightbox (UX):', image, overview);
-  //     setLightboxData({ image, overview });
-  //   };
 
   return (
     <section className="project" id="projects">
@@ -309,7 +262,11 @@ export const Project = () => {
                 />
                 <div className="text-card-wrapper">
                   <h4>{lightboxData.title}</h4>
-                  <p>{lightboxData.overview}</p>
+                  <ul>
+                    {lightboxData.overview.split("\n").map((line, index) => (
+                      <li key={index}>{line}</li>
+                    ))}{" "}
+                  </ul>
                   <a
                     href={lightboxData.github}
                     target="_blank"

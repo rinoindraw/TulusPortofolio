@@ -13,9 +13,9 @@ export const OrganizationExp = () => {
       duration: "June 2022 - October 2022",
       company: "Pengenalan Departemen Matematika (PDM) 2022",
       description:
-        "• Liaise with the event division for essential requirements like venues and supplies, ensuring their provision for events.\n" +
-        "• Collaborate with the financial division on the fiscal system for procuring necessary goods during events.\n" +
-        "• Coordinate with the secretarial division on official communications for securing venues during event series.",
+        "Liaise with the event division for essential requirements like venues and supplies, ensuring their provision for events.\n" +
+        "Collaborate with the financial division on the fiscal system for procuring necessary goods during events.\n" +
+        "Coordinate with the secretarial division on official communications for securing venues during event series.",
       logo: logoUi,
       title: "Universitas Indonesia",
     },
@@ -24,8 +24,8 @@ export const OrganizationExp = () => {
       duration: "March 2021 - February 2022",
       company: "Himpunan Mahasiswa Departemen Matematika FMIPA UI",
       description:
-        "• Engage in initiatives facilitated by the Career Development and Entrepreneur Department for Mathematics students, aimed at enhancing post-academic life. These initiatives encompass practical interview sessions, entrepreneurial courses, entrepreneurial projects including managing an Instagram feed, and webinars and workshops pertinent to careers in the field of Mathematics.\n" +
-        "• Collaborate with other staff by carrying out different tasks in each project.\n",
+        "Engage in initiatives facilitated by the Career Development and Entrepreneur Department for Mathematics students, aimed at enhancing post-academic life. These initiatives encompass practical interview sessions, entrepreneurial courses, entrepreneurial projects including managing an Instagram feed, and webinars and workshops pertinent to careers in the field of Mathematics.\n" +
+        "Collaborate with other staff by carrying out different tasks in each project.",
       logo: hmd,
       title: "Himpunan Mahasiswa Departemen Matematika",
     },
@@ -85,9 +85,11 @@ export const OrganizationExp = () => {
                         {experience.description
                           .split("\n")
                           .map((point, pointIndex) => (
-                            <p key={pointIndex} className="description">
+                            <ul>
+                              <li key={pointIndex} className="description">
                               {point}
-                            </p>
+                            </li>
+                            </ul>
                           ))}
                       </div>
                     </div>

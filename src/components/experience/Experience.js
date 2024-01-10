@@ -13,9 +13,9 @@ export const Experience = () => {
       company: "Department of Mathematics",
       duration: "March 2023 - July 2023",
       description:
-        "• Served as an instructor, delivering practicum, mentoring students, and fostering skill development in the field.\n" +
-        "• Developed learning modules for hands-on practice in data science, machine learning, and mathematical programming in Numerical Differential Equations.\n" +
-        "• Administered and assessed practicum projects to evaluate student learning.",
+        "Served as an instructor, delivering practicum, mentoring students, and fostering skill development in the field.\n" +
+        "Developed learning modules for hands-on practice in data science, machine learning, and mathematical programming in Numerical Differential Equations.\n" +
+        "Administered and assessed practicum projects to evaluate student learning.",
       logo: logoUi,
       title: "Universitas Indonesia",
     },
@@ -24,9 +24,9 @@ export const Experience = () => {
       company: "Machine Learning Cohort",
       duration: "February 2023 - July 2023",
       description:
-        "• Accomplished completion of courses in Data Analytics, Python Automation, Machine Learning, Deep Learning, Data, and Deployment. \n" +
-        "• Collaborated with a multidisciplinary team, including Cloud Computing, Mobile Development, and Machine Learning divisions, on a Capstone Project\n" +
-        "• Developed a Machine Learning model for implementation into an Android application as part of the project.",
+        "Accomplished completion of courses in Data Analytics, Python Automation, Machine Learning, Deep Learning, Data, and Deployment. \n" +
+        "Collaborated with a multidisciplinary team, including Cloud Computing, Mobile Development, and Machine Learning divisions, on a Capstone Project\n" +
+        "Developed a Machine Learning model for implementation into an Android application as part of the project.",
       logo: logoBangkit,
       title: "Bangkit Academy",
     },
@@ -84,9 +84,12 @@ export const Experience = () => {
                         {experience.description
                           .split("\n")
                           .map((point, pointIndex) => (
-                            <p key={pointIndex} className="description">
+                            <ul>
+                            <li key={pointIndex} className="description">
                               {point}
-                            </p>
+                            </li>
+                            
+                            </ul>
                           ))}
                       </div>
                     </div>

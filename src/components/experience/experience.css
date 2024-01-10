@@ -7,13 +7,14 @@
   margin-bottom: 35px;
 }
 
-.my-experience p {
+.my-experience li {
   color: #000;
   font-size: 17px;
   letter-spacing: 0.8px;
+  margin-left: 20px;
   line-height: 1.5em;
   margin-top: 10px;
-  text-align: start;
+  text-align: justify;
 }
 
 .my-experience h3 {
