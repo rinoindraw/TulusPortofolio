@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import healthkaton from "../../assets/img/healthkathon.png";
-import bpjs from "../../assets/img/bpjs.jpg";
 import bpjs2022 from "../../assets/img/bpjs2022.png";
 import "./achievement.css";
 import "animate.css";
@@ -66,7 +65,7 @@ export const Achievement = () => {
                     <div
                       className={
                         isVisible
-                          ? "animate__animated animate__slideInRight"
+                          ? "animate__animated animate__flipInX"
                           : ""
                       }
                     >

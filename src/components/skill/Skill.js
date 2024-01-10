@@ -43,7 +43,7 @@ export const Skill = () => {
                   <div
                     className={
                       isVisible
-                        ? "animate__animated animate__lightSpeedInRight"
+                        ? "animate__animated animate__flipInY"
                         : ""
                     }
                   >

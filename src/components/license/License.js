@@ -77,7 +77,7 @@ export const License = () => {
               <div
                 className={
                   isVisible
-                    ? "animate__animated animate__lightSpeedInLeft"
+                    ? "animate__animated animate__flipInY"
                     : ""
                 }
               >

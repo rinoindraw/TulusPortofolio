@@ -24,18 +24,12 @@
   line-height: 1.5em;
 }
 
-/* .org-experience h4 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-} */
-
 .org-experience .company-logo {
   margin-top: 15px;
   position: relative;
   margin-bottom: 24px;
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 .org-experience .company-logo img {
@@ -90,7 +84,6 @@
 .org-experience .company-details {
   width: 96%;
   /* text-align: justify; */
-  padding: 0 0; 
+  padding: 0 0;
   margin-left: 10px;
 }
-

@@ -40,7 +40,7 @@ export const Experience = () => {
             {({ isVisible }) => (
               <div
                 className={
-                  isVisible ? "animate__animated animate__flipInY" : ""
+                  isVisible ? "animate__animated animate__flipInX" : ""
                 }
               >
                 <h2>Experience</h2>
@@ -73,7 +73,7 @@ export const Experience = () => {
                     <div
                       className={
                         isVisible
-                          ? "animate__animated animate__slideInRight"
+                          ? "animate__animated animate__flipInX"
                           : ""
                       }
                     >

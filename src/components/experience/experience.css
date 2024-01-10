@@ -32,12 +32,6 @@
   font-weight: bold;
 }
 
-/* .my-experience h4 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
-} */
-
 .my-experience .company-logo {
   margin-top: 15px;
   position: relative;
@@ -49,8 +43,6 @@
 
 .my-experience .company-logo img {
   width: 100%;
-  /* height: 260px; */
-
   border-radius: 30px;
 }
 

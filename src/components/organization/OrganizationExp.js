@@ -72,7 +72,7 @@ export const OrganizationExp = () => {
                     <div
                       className={
                         isVisible
-                          ? "animate__animated animate__slideInRight"
+                          ? "animate__animated animate__flipInX"
                           : ""
                       }
                     >

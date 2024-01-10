@@ -1,118 +1,118 @@
 .certificate-item {
-    position: relative;
-    border-radius: 30px;
-    overflow: hidden;
-    margin-top: 30px;
-    margin-bottom: 55px;
-    -webkit-box-shadow:1px 10px 15px #354259;
-      -moz-box-shadow:1px 10px 15px #354259;
-      box-shadow:1px 10px 15px #354259;
-  }
-  
-  .certificate-item .certif-img {
-    height: 390px;
-  }
-  
-  .certif-desc {
-    position: absolute;
-    text-align: center;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.7s ease-in-out;
-    opacity: 0;
-    width: 100%;
-  }
-  
-  .certificate-item:hover .certif-desc {
-    top: 50%;
-    opacity: 1;
-  }
-  
-  .certificate-item::before {
-    content: "";
-    background: linear-gradient(90.21deg, #fb8b24 -5.91%, #f6b17a 111.58%);
-    opacity: 0.85;
-    position: absolute;
-    width: 100%;
-    height: 0;
-    transition: 0.6s ease-in-out;
-  }
-  
-  .certificate-item:hover::before {
-    height: 100%;
-  }
-  
-  .certif-desc h4 {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 1.1em;
-    color: #fff;
-  }
-  
-  .certif-desc span {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 15px;
-    color: #fff;
-    letter-spacing: 0.8px;
-  }
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  -webkit-box-shadow: 1px 10px 15px #354259;
+  -moz-box-shadow: 1px 10px 15px #354259;
+  box-shadow: 1px 10px 15px #354259;
+}
 
-  .overlay-container-license {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #F8FAE5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
+.certificate-item .certif-img {
+  height: 390px;
+}
 
-  .overlay-container-license .overlay-image-ux {
-    max-height: 560px;
-    margin-top: 80px;
-  }
-  
-  .overlay-container-license .overlay-image-ux img {
-    max-width: 100%;
-    max-height: 100%;
-  } 
+.certif-desc {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.7s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
 
-  .license-icon {
-    text-align: center;
-  }
+.certificate-item:hover .certif-desc {
+  top: 50%;
+  opacity: 1;
+}
 
-  .license-icon a svg {
-    margin : 25px 25px 0 25px;
-    font-size: 40px;
-    margin-left: 10px;
-    transition: 0.3s ease-in-out;
-    line-height: 1;
-  }
-  
-  .license-icon a:hover {
-    color: #000;
-  }
-  
-  .license-icon a:hover svg {
-    margin-left: 25px;
-  }
-  
-  .license-icon .left-anim:hover svg {
-    margin-right: 50px;
-  }
+.certificate-item::before {
+  content: "";
+  background: linear-gradient(90.21deg, #fb8b24 -5.91%, #f6b17a 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.6s ease-in-out;
+}
 
-  .license-experience h2 {
-    color: #000;
-    font-size: 45px;
+.certificate-item:hover::before {
+  height: 100%;
+}
+
+.certif-desc h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+  color: #fff;
+}
+
+.certif-desc span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: 0.8px;
+}
+
+.overlay-container-license {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8fae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.overlay-container-license .overlay-image-ux {
+  max-height: 560px;
+  margin-top: 80px;
+}
+
+.overlay-container-license .overlay-image-ux img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.license-icon {
+  text-align: center;
+}
+
+.license-icon a svg {
+  margin: 25px 25px 0 25px;
+  font-size: 40px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.license-icon a:hover {
+  color: #000;
+}
+
+.license-icon a:hover svg {
+  margin-left: 25px;
+}
+
+.license-icon .left-anim:hover svg {
+  margin-right: 50px;
+}
+
+.license-experience h2 {
+  color: #000;
+  font-size: 45px;
   font-weight: 700;
   text-align: center;
   color: #000;
-  }
-  .license-header {
-    margin-top: 20px;
-  }
+}
+.license-header {
+  margin-top: 20px;
+}

@@ -6,8 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import TrackVisibility from "react-on-screen";
 import "./project.css";
-import work1 from "../../assets/img/portotulus1.jpeg";
-import work2 from "../../assets/img/datascient.png";
 import teethCare from "../../assets/img/teethcare.png";
 import nlp from "../../assets/img/nlp.jpg";
 import geneExpression from "../../assets/img/dataset-cover.png";
@@ -35,7 +33,7 @@ export const Project = () => {
         "Implemented K-means and Hierarchical clustering models for brain cancer gene expression analysis.\n" +
         "Constructed Logistic Regression and XGBoost Classifier models for classifying brain cancer gene expression.\n" +
         "Utilized differential expression and statistical methods to identify genes with altered expression levels in breast cancer gene expression.",
-      github: "https://github.com/rinoindraw/WebChat",
+      github: "https://github.com/Jendma/Academic/tree/main/Data%20Science%20Genom",
     },
     {
       title: "Inefficient Claim Detection",
@@ -44,7 +42,7 @@ export const Project = () => {
       overview:
         "Implemented an XGBoost model to classify claim inefficiencies among BPJS Kesehatan participants.\n" +
         "The model demonstrated high performance with an accuracy score of 99.4% and a precision score of 95.2%.",
-      github: "https://github.com/rinoindraw/WebChat",
+      github: "https://github.com/Jendma/Journey/tree/main/Healthkathon%20BPJS%20Kesehatan%202022",
     },
   ];
   const dataAnalyticsVisualization = [
@@ -55,7 +53,7 @@ export const Project = () => {
       overview:
         "Pioneered the development of informative and interactive dashboards, leveraging geographic data to foster a culture of data-driven decision-making.\n" +
         "Created dashboards to visualize demographic information, facility preferences, and health issue distribution of BPJS Kesehatan participants.",
-      github: "https://github.com/rinoindraw/WebChat",
+      github: "https://github.com/Jendma/Journey/tree/main/Healthkathon%20BPJS%20Kesehatan%202023",
     },
   ];
   const naturalLanguageProcessing = [
@@ -67,7 +65,7 @@ export const Project = () => {
         "Constructed NLP models for Sentiment Analysis and Topic Detection, specifically analyzing tweets about ChatGPT from March 2023.\n" +
         "Developed a Sentiment Analysis model using the BERT Pretrained model, achieving an accuracy score of 88% on tweets about the 2014 Presidential Election.",
 
-      github: "https://github.com/rinoindraw/WebChat",
+      github: "https://github.com/Jendma/Academic/tree/main/Web%20Mining",
     },
   ];
   const sqlTab = [
@@ -78,7 +76,7 @@ export const Project = () => {
       overview:
         "Developed an e-commerce database to aid management decisions.\n" +
         "Utilizing SQLite software and Google Colab's sqlite3 module for data wrangling, database creation, and data analysis.",
-      github: "https://github.com/rinoindraw/WebChat",
+      github: "https://github.com/Jendma/Academic/tree/main/Database%20for%20Data%20Science",
     },
   ];
   const [lightboxData, setLightboxData] = useState({
@@ -107,7 +105,7 @@ export const Project = () => {
                 <div
                   className={
                     isVisible
-                      ? "animate__animated animate__lightSpeedInLeft"
+                      ? "animate__animated animate__flipInY"
                       : ""
                   }
                 >

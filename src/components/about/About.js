@@ -65,11 +65,11 @@ export const About = () => {
       <Container>
         <Row className="align-items-center justify-content-center">
           <Col xs={12} md={6} xl={6}>
-            <TrackVisibility>
+            <TrackVisibility once>
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__slideInLeft" : ""
+                    isVisible ? "animate__animated animate__flipInX" : ""
                   }
                 >
                   <h1>About Me</h1>
