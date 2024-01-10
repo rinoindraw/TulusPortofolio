@@ -29,7 +29,7 @@ export const License = () => {
     {
       image: certifBpjs,
       desc: "3rd Place in the Machine Learning Category",
-      hover: "BPJS KESEHATAN HEALTHKATON 2022",
+      hover: "BPJS KESEHATAN HEALTHKATHON 2022",
     },
     {
       image: certCourseraTensorflow,

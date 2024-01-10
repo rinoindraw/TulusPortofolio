@@ -65,7 +65,7 @@ export const Achievement = () => {
                     <div
                       className={
                         isVisible
-                          ? "animate__animated animate__flipInX"
+                          ? "animate__animated animate__slideInRight"
                           : ""
                       }
                     >
